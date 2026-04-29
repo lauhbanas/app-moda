@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlusStyle App</title>
+  <style>
+    body { font-family: Arial; background:#f5f5f5; margin:0; }
+    .container { padding:20px; }
+    .card { background:white; padding:15px; margin:10px 0; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1);} 
+    button { padding:10px; border:none; background:#ff6b81; color:white; border-radius:8px; margin-top:10px; }
+    input { padding:10px; width:100%; margin:5px 0; }
+    img { width:100%; border-radius:10px; }
+  </style>
+</head>
+<body>
+
+<!-- HOME -->
+<div class="container" id="home">
+  <h2>PlusStyle 💖</h2>
+  <p>Moda inclusiva para todos os corpos</p>
+  <button onclick="goTo('cadastro')">Começar</button>
+</div>
+
+<!-- CADASTRO -->
+<div class="container" id="cadastro" style="display:none">
+  <h2>Cadastro</h2>
+  <input placeholder="Altura">
+  <input placeholder="Peso">
+  <input placeholder="Estilo (casual, social...)">
+  <button onclick="goTo('sugestoes')">Ver sugestões</button>
+</div>
+
+<!-- SUGESTÕES -->
+<div class="container" id="sugestoes" style="display:none">
+  <h2>Roupas para você 👗</h2>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" alt="Vestido">
+    <p>Vestido Casual Plus Size</p>
+    <button onclick="goTo('produto')">Ver detalhes</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200" alt="Calça">
+    <p>Calça Jeans Confortável</p>
+    <button onclick="goTo('produto')">Ver detalhes</button>
+  </div>
+
+  <button onclick="goTo('lojas')">Ver lojas</button>
+</div>
+
+<!-- PRODUTO -->
+<div class="container" id="produto" style="display:none">
+  <h2>Detalhes da roupa</h2>
+  <img src="https://via.placeholder.com/300x200">
+  <p>Roupa confortável, moderna e pensada para todos os corpos.</p>
+  <button onclick="goTo('lojas')">Ir para loja</button>
+</div>
+
+<!-- LOJAS -->
+<div class="container" id="lojas" style="display:none">
+  <h2>Lojas inclusivas 🛍️</h2>
+  <div class="card">Loja Plus Curitiba</div>
+  <div class="card">Moda Livre Store</div>
+  <button onclick="goTo('sugestoes')">Voltar para roupas</button>
+  <button onclick="goTo('home')">Início</button>
+</div>
+
+<script>
+function goTo(page){
+  document.getElementById('home').style.display='none';
+  document.getElementById('cadastro').style.display='none';
+  document.getElementById('sugestoes').style.display='none';
+  document.getElementById('produto').style.display='none';
+  document.getElementById('lojas').style.display='none';
+  document.getElementById(page).style.display='block';
+}
+</script>
+
+</body>
+</html>
