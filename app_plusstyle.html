@@ -8,7 +8,7 @@
 body { font-family: Arial; background:#f5f5f5; text-align:center; }
 .card { background:white; padding:10px; margin:15px; border-radius:10px; }
 img { width:200px; border-radius:10px; }
-button { padding:10px; background:#ff6b81; color:white; border:none; border-radius:8px; }
+button { padding:10px; background:#ff6b81; color:white; border:none; border-radius:8px; margin-top:5px; }
 </style>
 
 </head>
@@ -55,107 +55,86 @@ button { padding:10px; background:#ff6b81; color:white; border:none; border-radi
     <button onclick="alert('Indo para compra')">Comprar</button>
   </div>
 
-  <button onclick="mostrar('loja')">Ir para loja</button>
+  <button onclick="mostrar('lojas')">Ver lojas</button>
 
 </div>
 
-<div id="loja" style="display:none">
-  <h3>Lojas 🛍️</h3>
-  <p>Loja Inclusiva Curitiba</p>
+<div id="lojas" style="display:none">
+
+  <h3>Lojas em Curitiba 🛍️</h3>
+
+  <div class="card">
+    <p><b>Curvy Style Store</b></p>
+    <p>Moda casual</p>
+    <p>Batel - Rua XV de Novembro, 123</p>
+  </div>
+
+  <div class="card">
+    <p><b>Plus Chic Curitiba</b></p>
+    <p>Moda moderna</p>
+    <p>Centro - Rua das Flores, 456</p>
+  </div>
+
+  <div class="card">
+    <p><b>Elegance Plus</b></p>
+    <p>Moda social</p>
+    <p>Água Verde - Av. República Argentina, 789</p>
+  </div>
+
+  <div class="card">
+    <p><b>Corpo Livre Fashion</b></p>
+    <p>Moda confortável</p>
+    <p>Portão - Rua Itacolomi, 321</p>
+  </div>
+
+  <div class="card">
+    <p><b>Ateliê Sob Medida CWB</b></p>
+    <p>Roupas personalizadas</p>
+    <p>Bigorrilho - Rua Padre Anchieta, 654</p>
+  </div>
+
+  <div class="card">
+    <p><b>Plus Glam Festa</b></p>
+    <p>Moda festa</p>
+    <p>Cabral - Rua Bom Jesus, 987</p>
+  </div>
+
+  <div class="card">
+    <p><b>Curitiba Plus Trends</b></p>
+    <p>Moda jovem</p>
+    <p>Centro Cívico - Av. Cândido de Abreu, 111</p>
+  </div>
+
+  <div class="card">
+    <p><b>Ateliê Elegância Sob Medida</b></p>
+    <p>Alta costura</p>
+    <p>Juvevê - Rua Augusto Stresser, 222</p>
+  </div>
+
+  <div class="card">
+    <p><b>Style Curve Boutique</b></p>
+    <p>Moda premium</p>
+    <p>Ecoville - Rua Professor Pedro Viriato, 333</p>
+  </div>
+
+  <div class="card">
+    <p><b>Beleza Real Plus</b></p>
+    <p>Moda acessível</p>
+    <p>Boqueirão - Rua Anne Frank, 444</p>
+  </div>
+
   <button onclick="mostrar('home')">Voltar</button>
+
 </div>
 
 <script>
 function mostrar(id){
   document.getElementById('cadastro').style.display='none';
   document.getElementById('roupas').style.display='none';
-  document.getElementById('loja').style.display='none';
+  document.getElementById('lojas').style.display='none';
   document.getElementById(id).style.display='block';
 }
 </script>
 
 </body>
 </html>
-
-<div id="lojas" style="display:none">
-
-  <h3>Lojas em CWB 🛍️</h3>
-
-  <div class="card">
-    <p><b>Curva Bela Store</b></p>
-    <p>Moda casual</p>
-    <p>Bairro Nova Forma</p>
-    <button onclick="verMapa()">Ver no mapa</button>
-  </div>
-
-  <div class="card">
-    <p><b>Estilo Real Plus</b></p>
-    <p>Moda moderna</p>
-    <p>Bairro Harmonia</p>
-    <button onclick="verMapa()">Ver no mapa</button>
-  </div>
-
-  <div class="card">
-    <p><b>Elegância Plena</b></p>
-    <p>Moda social</p>
-    <p>Bairro Essência</p>
-    <button onclick="verMapa()">Ver no mapa</button>
-  </div>
-
-  <div class="card">
-    <p><b>Movimento Curvas</b></p>
-    <p>Moda confortável</p>
-    <p>Bairro Equilíbrio</p>
-    <button onclick="verMapa()">Ver no mapa</button>
-  </div>
-
-  <div class="card">
-    <p><b>Ateliê Forma Única</b></p>
-    <p>Sob medida</p>
-    <p>Bairro Criativo</p>
-    <button onclick="verMapa()">Ver no mapa</button>
-  </div>
-
-  <div class="card">
-    <p><b>Noite & Curvas</b></p>
-    <p>Moda festa</p>
-    <p>Bairro Luz</p>
-    <button onclick="verMapa()">Ver no mapa</button>
-  </div>
-
-  <div class="card">
-    <p><b>Essência Plus Boutique</b></p>
-    <p>Moda premium</p>
-    <p>Bairro Inspiração</p>
-    <button onclick="verMapa()">Ver no mapa</button>
-  </div>
-
-  <div class="card">
-    <p><b>Curvy Lab Fashion</b></p>
-    <p>Moda jovem</p>
-    <p>Bairro Inovação</p>
-    <button onclick="verMapa()">Ver no mapa</button>
-  </div>
-
-  <div class="card">
-    <p><b>Ateliê Livre Estilo</b></p>
-    <p>Alta costura</p>
-    <p>Bairro Arte</p>
-    <button onclick="verMapa()">Ver no mapa</button>
-  </div>
-
-  <div class="card">
-    <p><b>Beleza Sem Padrão</b></p>
-    <p>Moda acessível</p>
-    <p>Bairro Diversidade</p>
-    <button onclick="verMapa()">Ver no mapa</button>
-  </div>
-
-  <button onclick="mostrar('home')">Voltar</button>
-
-</div>
-<script>
-function verMapa(){
-  window.open("https://www.google.com/maps/place/Curitiba", "_blank");
-}
-</script>
