@@ -5,16 +5,44 @@
 <title>PlusStyle</title>
 
 <style>
-body { font-family: Arial; background:#f5f5f5; text-align:center; }
-.card { background:white; padding:10px; margin:15px; border-radius:10px; }
-img { width:200px; border-radius:10px; }
-button { padding:10px; background:#ff6b81; color:white; border:none; border-radius:8px; margin-top:5px; }
+body {
+  font-family: Arial;
+  background:#e4e4e4;
+  text-align:center;
+}
+
+.card {
+  background:white;
+  padding:15px;
+  margin:15px;
+  border-radius:12px;
+}
+
+img {
+  width:200px;
+  border-radius:10px;
+}
+
+button {
+  padding:10px;
+  background:#555;
+  color:white;
+  border:none;
+  border-radius:8px;
+  margin-top:8px;
+}
+
+h2 {
+  color:#333;
+}
 </style>
 
 </head>
 <body>
 
-<h2>PlusStyle 💖</h2>
+<h2>PlusStyle 🖤</h2>
+<p>Moda inclusiva para todos os corpos</p>
+
 <button onclick="mostrar('cadastro')">Começar</button>
 
 <div id="cadastro" style="display:none">
@@ -25,104 +53,55 @@ button { padding:10px; background:#ff6b81; color:white; border:none; border-radi
 
 <div id="roupas" style="display:none">
 
-  <h3>Roupas 👗</h3>
+  <h3>Roupas</h3>
 
   <div class="card">
     <img src="https://img.ltwebstatic.com/v4/j/pi/2025/10/27/98/1761562396bad7da6044bf41beef21dc52f4ce6c7b_thumbnail_405x552.jpg">
-    <p>Blusa</p>
+    <p>Blusa confortável</p>
     <p>R$ 79,90</p>
-    <button onclick="alert('Indo para compra')">Comprar</button>
+    <button onclick="comprar()">Comprar</button>
   </div>
 
   <div class="card">
     <img src="https://img.ltwebstatic.com/v4/j/pi/2025/09/30/36/1759225497a9d8a7795f85b14e0419a9b53b589b92_thumbnail_405x552.jpg">
-    <p>Conjunto branco</p>
+    <p>Conjunto branco elegante</p>
     <p>R$ 149,90</p>
-    <button onclick="alert('Indo para compra')">Comprar</button>
+    <button onclick="comprar()">Comprar</button>
   </div>
 
   <div class="card">
     <img src="https://img.ltwebstatic.com/v4/j/pi/2025/08/25/78/1756118482d0143cb5edd9740e20daf0fd09f213ed_thumbnail_405x552.jpg">
-    <p>Conjunto azul</p>
+    <p>Conjunto azul moderno</p>
     <p>R$ 159,90</p>
-    <button onclick="alert('Indo para compra')">Comprar</button>
+    <button onclick="comprar()">Comprar</button>
   </div>
 
   <div class="card">
     <img src="https://img.ltwebstatic.com/images3_pi/2023/12/01/d9/170142017329dcc361fb963d7bbca4761469a521bf_thumbnail_405x552.jpg">
     <p>Vestido preto</p>
     <p>R$ 129,90</p>
-    <button onclick="alert('Indo para compra')">Comprar</button>
+    <button onclick="comprar()">Comprar</button>
   </div>
 
-  <button onclick="mostrar('lojas')">Ver lojas</button>
+  <button onclick="mostrar('sobre')">Sobre a loja</button>
 
 </div>
 
-<div id="lojas" style="display:none">
+<div id="sobre" style="display:none">
 
-  <h3>Lojas em Curitiba 🛍️</h3>
+  <h3>Sobre a PlusStyle</h3>
 
-  <div class="card">
-    <p><b>Curvy Style Store</b></p>
-    <p>Moda casual</p>
-    <p>Batel - Rua XV de Novembro, 123</p>
-  </div>
+  <p>
+    A PlusStyle é uma loja inclusiva criada para valorizar todos os corpos,
+    oferecendo roupas modernas, confortáveis e acessíveis para pessoas plus size.
+  </p>
 
-  <div class="card">
-    <p><b>Plus Chic Curitiba</b></p>
-    <p>Moda moderna</p>
-    <p>Centro - Rua das Flores, 456</p>
-  </div>
+  <p>
+    📍 Endereço fictício: Bairro Nova Forma, Rua da Inclusão, 123 – CWB
+  </p>
 
-  <div class="card">
-    <p><b>Elegance Plus</b></p>
-    <p>Moda social</p>
-    <p>Água Verde - Av. República Argentina, 789</p>
-  </div>
-
-  <div class="card">
-    <p><b>Corpo Livre Fashion</b></p>
-    <p>Moda confortável</p>
-    <p>Portão - Rua Itacolomi, 321</p>
-  </div>
-
-  <div class="card">
-    <p><b>Ateliê Sob Medida CWB</b></p>
-    <p>Roupas personalizadas</p>
-    <p>Bigorrilho - Rua Padre Anchieta, 654</p>
-  </div>
-
-  <div class="card">
-    <p><b>Plus Glam Festa</b></p>
-    <p>Moda festa</p>
-    <p>Cabral - Rua Bom Jesus, 987</p>
-  </div>
-
-  <div class="card">
-    <p><b>Curitiba Plus Trends</b></p>
-    <p>Moda jovem</p>
-    <p>Centro Cívico - Av. Cândido de Abreu, 111</p>
-  </div>
-
-  <div class="card">
-    <p><b>Ateliê Elegância Sob Medida</b></p>
-    <p>Alta costura</p>
-    <p>Juvevê - Rua Augusto Stresser, 222</p>
-  </div>
-
-  <div class="card">
-    <p><b>Style Curve Boutique</b></p>
-    <p>Moda premium</p>
-    <p>Ecoville - Rua Professor Pedro Viriato, 333</p>
-  </div>
-
-  <div class="card">
-    <p><b>Beleza Real Plus</b></p>
-    <p>Moda acessível</p>
-    <p>Boqueirão - Rua Anne Frank, 444</p>
-  </div>
-
+  <button onclick="abrirLoja()">Ir para loja online</button>
+  <br><br>
   <button onclick="mostrar('home')">Voltar</button>
 
 </div>
@@ -131,8 +110,21 @@ button { padding:10px; background:#ff6b81; color:white; border:none; border-radi
 function mostrar(id){
   document.getElementById('cadastro').style.display='none';
   document.getElementById('roupas').style.display='none';
-  document.getElementById('lojas').style.display='none';
-  document.getElementById(id).style.display='block';
+  document.getElementById('sobre').style.display='none';
+
+  if(id === 'home'){
+    location.reload();
+  } else {
+    document.getElementById(id).style.display='block';
+  }
+}
+
+function comprar(){
+  alert("Produto adicionado (simulação)");
+}
+
+function abrirLoja(){
+  window.open("https://lauhbanas.github.io/PlusStyle/", "_blank");
 }
 </script>
 
